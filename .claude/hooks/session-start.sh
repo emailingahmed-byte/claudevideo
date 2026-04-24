@@ -26,10 +26,14 @@ echo "[session-start] installing Python dependencies..."
 pip install --quiet --disable-pip-version-check -r tools/requirements.txt
 
 echo "[session-start] installing Node dependencies for key projects..."
+# Idempotent: skip if node_modules already exists. Avoids npm install mutating
+# committed package-lock.json on every session resume.
 for dir in playwright examples/hello-world templates/sprint-review; do
-  if [ -f "$dir/package.json" ]; then
-    echo "  - $dir"
+  if [ -f "$dir/package.json" ] && [ ! -d "$dir/node_modules" ]; then
+    echo "  - $dir (installing)"
     (cd "$dir" && npm install --no-audit --no-fund --silent)
+  elif [ -d "$dir/node_modules" ]; then
+    echo "  - $dir (cached, skipping)"
   fi
 done
 
