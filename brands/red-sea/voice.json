@@ -1,0 +1,22 @@
+{
+  "voiceId": "YOUR_ELEVENLABS_VOICE_ID",
+  "description": "Contemplative cinematic narrator for the RSIFF 2026 'Cinema Lives Here' manifesto. Slow, deliberate, warm, authoritative. Roughly the register of a Morgan Freeman / Ben Kingsley documentary read — grounded, unhurried, weight on every line.",
+  "settings": {
+    "stability": 0.55,
+    "similarityBoost": 0.85,
+    "style": 0.35,
+    "useSpeakerBoost": true
+  },
+  "model": "eleven_multilingual_v2",
+  "pacing": {
+    "targetWPM": 120,
+    "note": "Manifesto rhythm — slow, reflective, with full beats between short lines. Do NOT compress pauses. Add explicit <break> markers in SSML where the script has paragraph breaks."
+  },
+  "qwen3Fallback": {
+    "speaker": "Ryan",
+    "tone": "warm",
+    "temperature": 0.7,
+    "note": "If using Qwen3-TTS instead of ElevenLabs. Temperature kept moderate to avoid over-expressive delivery on a solemn script."
+  },
+  "notes": "English-language narration only for this manifesto. Arabic titles appear on-screen alongside the English title lockups but are not spoken in the default cut."
+}

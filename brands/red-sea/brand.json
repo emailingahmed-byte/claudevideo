@@ -1,0 +1,144 @@
+{
+  "name": "Red Sea International Film Festival",
+  "shortName": "RSIFF",
+  "description": "Red Sea International Film Festival brand profile for the 2026 theme 'Cinema Lives Here'. Editorial, cinematic, bilingual (English + Arabic), frame-driven.",
+  "version": "0.1.0",
+  "theme": {
+    "year": 2026,
+    "title": "Cinema Lives Here",
+    "titleArabic": "السينما تعيش هنا",
+    "tagline": "Loud. Bright. Colorful. Alive.",
+    "manifestoVoice": "Contemplative, declarative, poetic. Short sentences. Anaphora. Repetition as emphasis."
+  },
+  "website": "https://redseafilmfest.com",
+
+  "colors": {
+    "ink": "#000000",
+    "paper": "#FFFFFF",
+
+    "signature": "#D7FF1F",
+    "signatureLabel": "Chartreuse / Frame accent. Cover + signature frame color — sits outside the photographic palette.",
+
+    "red": { "deep": "#B31419", "mid": "#E5383B", "pale": "#F9C7BD" },
+    "yellow": { "deep": "#C79838", "mid": "#F2C141", "pale": "#F8E4A0" },
+    "orange": { "deep": "#D27A3F", "mid": "#EC9456", "pale": "#F6CBA9" },
+    "pink": { "deep": "#C862B5", "mid": "#F093D7", "pale": "#FAD5EF" },
+    "green": { "deep": "#4F8A56", "mid": "#8EBC7C", "pale": "#CDE5C0" },
+    "blue": { "deep": "#2873B0", "mid": "#5EB0DC", "pale": "#B5D8E9" },
+    "purple": { "deep": "#6747B8", "mid": "#9080DB", "pale": "#C7BEEA" },
+
+    "posterRed": "#F04545",
+    "posterPurple": "#8C7ADB",
+
+    "textDark": "#000000",
+    "textMedium": "#2A2A2A",
+    "textLight": "#6B6B6B",
+    "bgLight": "#FFFFFF",
+    "bgOffWhite": "#FAFAFA",
+    "bgDark": "#000000",
+    "divider": "#000000",
+
+    "_notes": "Hex values are visual approximations extracted from the brand deck palette sheet. Team should replace with canonical values from the master brand spec if available."
+  },
+
+  "fonts": {
+    "english": {
+      "canonical": "Nohemi",
+      "foundry": "Pangram Pangram Foundry",
+      "weights": [300, 400, 500, 700, 800, 900],
+      "fallback": "Archivo, 'Archivo Black', Inter, system-ui, -apple-system, sans-serif",
+      "use": "All English text — display and body. Heavy weights for titles, regular for body."
+    },
+    "arabicTitle": {
+      "canonical": "Panorama",
+      "fallback": "'IBM Plex Sans Arabic', 'Noto Kufi Arabic', 'Tajawal', sans-serif",
+      "use": "Arabic display / titles"
+    },
+    "arabicBody": {
+      "canonical": "Rawasi",
+      "fallback": "'IBM Plex Sans Arabic', 'Cairo', 'Tajawal', sans-serif",
+      "use": "Arabic body text"
+    },
+    "_notes": "Nohemi, Panorama and Rawasi are licensed. Drop font files into brands/red-sea/assets/fonts/ to render canonical type; otherwise the fallback stacks are used."
+  },
+
+  "typography": {
+    "display": { "size": 160, "weight": 800, "lineHeight": 0.95, "letterSpacing": -2, "case": "uppercase" },
+    "h1": { "size": 120, "weight": 800, "lineHeight": 1.0, "case": "uppercase" },
+    "h2": { "size": 72, "weight": 300, "lineHeight": 1.05, "case": "uppercase", "note": "Thin-weight all-caps, editorial page title style (e.g. 'INTRODUCTION')" },
+    "h3": { "size": 48, "weight": 700 },
+    "body": { "size": 36, "weight": 400, "lineHeight": 1.4 },
+    "caption": { "size": 24, "weight": 500, "letterSpacing": 1, "case": "uppercase" },
+    "rule": { "strokeWidth": 2, "color": "#000000", "note": "Hairline-to-thin horizontal rules above and below titles" }
+  },
+
+  "spacing": {
+    "xs": 8,
+    "sm": 16,
+    "md": 32,
+    "lg": 64,
+    "xl": 120,
+    "xxl": 200
+  },
+
+  "borderRadius": {
+    "sm": 0,
+    "md": 0,
+    "lg": 0,
+    "_note": "Brand is strictly rectilinear — no rounded corners anywhere."
+  },
+
+  "designDevice": {
+    "name": "The Frame",
+    "description": "A living rectangular outline inspired by the director's viewfinder. Always adjusting, never static.",
+    "behavior": {
+      "can": ["Adapt size", "Adapt orientation", "Adapt cropping", "Adapt placement", "Contain subject", "Reveal key details", "Crop image", "Expand beyond composition", "Be broken by the subject"],
+      "should": ["Feel intentional in what it includes and excludes", "Interact with subject, not sit around it", "Create hierarchy and focus", "Allow moments to extend beyond it when needed"],
+      "never": ["Feel decorative", "Sit passively", "Be perfectly centered every time", "Become a border"]
+    },
+    "shape": {
+      "style": "Stepped / asymmetric / jigsaw outline — rarely a simple rectangle",
+      "strokeWidthRatio": 0.015,
+      "strokeWidthNote": "Stroke is ~1.5% of the frame's longest side — substantial but not chunky"
+    },
+    "colors": {
+      "primary": "#D7FF1F",
+      "alternates": ["#F04545", "#5EB0DC", "#F093D7", "#8EBC7C", "#8C7ADB", "#000000", "#FFFFFF"]
+    },
+    "motionRules": "The Frame should animate in every scene. Reframe, crop in/out, shift, scale, or morph its stepped silhouette. Subjects should periodically break containment."
+  },
+
+  "bilingual": {
+    "enabled": true,
+    "rule": "English and Arabic are woven together at matching scale. Neither subordinate. Arabic is not a translation afterthought — it sits alongside or interleaved with English.",
+    "example": "CINEMA / السينما / LIVES / تعيش / HERE / هنا"
+  },
+
+  "photography": {
+    "style": "Contemporary cinematic portraiture of people with cameras and subjects, often in Saudi settings (Jeddah sculpture park, historic architecture, sea). Natural light. Saturated, not desaturated.",
+    "treatment": "Cutout collage — subjects are isolated from backgrounds and pasted onto color blocks from the palette. Multiple photos can overlap within a single composition.",
+    "director": "B&W archival / editorial references of directors (framing gesture) allowed as secondary imagery."
+  },
+
+  "pageChrome": {
+    "description": "Editorial page layout used on deck and printed/digital materials",
+    "topRule": true,
+    "bottomRule": true,
+    "header": {
+      "left": "RSIFF Theme 2026",
+      "center": "Cinema Lives Here",
+      "right": "[page number]"
+    }
+  },
+
+  "assets": {
+    "logoHorizontal": "assets/logos/rsiff-horizontal-black.svg",
+    "logoVertical": "assets/logos/rsiff-vertical-black.svg",
+    "logoWhiteHorizontal": "assets/logos/rsiff-horizontal-white.svg",
+    "logoWhiteVertical": "assets/logos/rsiff-vertical-white.svg",
+    "_needed": [
+      "Drop the RSIFF logo files (SVG preferred, PNG acceptable) into assets/logos/ — black and white variants of both the horizontal and vertical lockups.",
+      "Drop Nohemi, Panorama, and Rawasi font files into assets/fonts/ if licensed — otherwise the fallback font stacks are used."
+    ]
+  }
+}
